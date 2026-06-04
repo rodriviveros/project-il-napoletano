@@ -200,12 +200,17 @@
     </a>
 
     <script>
-        const precioTotal = 250000;
-        const cantidadCuotas = 12; // 12 Cuotas
-        const valorCuota=precioTotal / cantidadCuotas;                 // Operadores Matematicos: +, - , * , /
 
-        console.log("Valor de la cuota"+":"+valorCuota.toFixed(2)+ "$");  
+        async function loadProducts() {
+        const response=await fetch("product.json"); //Response almacena una variable de objetos (objeto=guarda propiedades/atributos y metodos. Almacena un conjunto de acciones y variables)
+        const data=await response.json();            // data guarda el JSON leido
+        console.log(data);
+        }
+
+        document.addEventListener('DOMContentLoaded',loadProducts)
+
 
     </script>
 </body>
+
 </html>
