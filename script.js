@@ -1,18 +1,21 @@
-async function loadProducts() {
-const response = await fetch("product.json"); // response guarda un Objeto
-const data = await response.json();            // data guarda el JSON leido
-console.log(data.productos[0].nombre);
-console.log(data.productos[0].precio);
+async function cargarProductos() {
+// Cargar el archivo JSON
+try{
+const response = await fetch('product.json');
+const data = await response.json();
+console.log(data);
+const gallery=document.querySelector('.gallery');
+gallery.innerHTML='';
+data.productos.forEach(pizza=>{
+const li=document.createElement('li');
+li.innerHTML=`${pizza.nombre}`;
 
-if (data.productos.lenght>0){
-// Hay productos
-console.log("Productos cargados con exito!")
+gallery.appendChild(li);
+}); // End of forEach
 
-} else {
-    // No Hay Productos
-console.log("Productos cargados con exito!")
-}
-
-}
-
-document.addEventListener('DOMContentLoaded', loadProducts);
+} // End of try
+catch(error){
+console.error('Error al cargar productos:', error);                                                                                                                                                                                                                                
+}  // End of catch
+} // End of Function
+document.addEventListener('DOMContentLoaded', cargarProductos);
