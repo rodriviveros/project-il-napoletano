@@ -1,6 +1,6 @@
 
 {"productos":[{
-    "id": 1,
+    "id": 0,
     "nombre": "Pizza Muzzarella",
     "precio": 18000,
     "fecha": "26/05/2026",
@@ -8,7 +8,7 @@
     "descripcion": "La clásica pizza muzarella de siempre"
 },
 {
-    "id": 2,
+    "id": 1,
     "nombre": "Pizza Cuatro Quesos",
     "precio": 23000,
     "fecha": "26/05/2026",
@@ -16,7 +16,7 @@
     "descripcion": "La clásica pizza cuatro quesos para los mas cultos"
 },
 {
-    "id": 3,
+    "id": 2,
     "nombre": "Pizza Fugazzeta",
     "precio": 16000,
     "fecha": "26/05/2026",
@@ -24,7 +24,7 @@
     "descripcion": "La mejor opcion para los amantes del queso y la cebolla"
 },
 {
-    "id": 4,
+    "id": 3,
     "nombre": "Pizza de Jamon Crudo y Rucula",
     "precio": 27000,
     "fecha": "26/05/2026",
@@ -32,15 +32,15 @@
     "descripcion": "La combinación perfecta entre frescura y sabor"
 },
 {
-    "id": 5,
+    "id": 4,
     "nombre": "Pizza de Jamon y morrones",
     "precio": 25000,
     "fecha": "26/05/2026",
-    "imagen": "src/img/pizza_de_jamon _y_morron_il_napoletano.webp",
+    "imagen": "img/pizza_de_jamon_y_morron_il_napoletano.webp",
     "descripcion": "La autentica pizza mas aclamada por todas las familias"
 },
 {
-    "id": 6,
+    "id": 5,
     "nombre": "Pizza Napolitana",
     "precio": 20000,
     "fecha": "26/05/2026",
@@ -48,7 +48,7 @@
     "descripcion": "La especialidad de la casa, un sabor que refleja sus raices napoletanas"
 },
 {
-    "id": 7,
+    "id": 6,
     "nombre": "Pizza de Albahaca",
     "precio": 19500,
     "fecha": "26/05/2026",
@@ -57,11 +57,27 @@
 },
 {
 
-    "id": 8,
+    "id": 7,
     "nombre": "Pizza de Provolone",
     "precio": 27000,
     "fecha": "26/05/2026",
-    "imagen": "img/provolone.jpg ",
+    "imagen": "img/pizza-provolone-il-napoletano.webp",
     "descripcion": "Nueva pizza para que la disfruten todos"
+},
+{
+    "id": 8,
+    "nombre": "Pizza de Panceta y Verdeo",
+    "precio": 34000,
+    "fecha": "16/06/2026",
+    "imagen": "img/pizza-de-panceta.webp",
+    "descripcion": "Una combinación irresistible con el sabor intenso y ahumado de la panceta."
+},
+{
 
+    "id": 9,
+    "nombre": "Pizza Copa Mundialista",
+    "precio": 20000,
+    "fecha": "26/05/2026",
+    "imagen": "img/pizza_mundialista-il-napolitano.webp",
+    "descripcion": "Pizza familiar para los campeones del mundo."
 }]}

@@ -8,7 +8,19 @@ const gallery=document.querySelector('.gallery');
 gallery.innerHTML='';
 data.productos.forEach(pizza=>{
 const li=document.createElement('li');
-li.innerHTML=`${pizza.nombre}`;
+li.innerHTML=` <div class="box">
+                    <figure>
+                        <img src="${pizza.imagen}" alt="${pizza.nombre}"/>
+                        <figcaption>
+                            <h3>${pizza.nombre}</h3>
+                            <p>$ ${pizza.precio.toLocaleString('es-AR')}</p>
+                            <time>${pizza.fecha}</time>
+                        </figcaption>
+                    </figure>
+                    <button class="button" value="${pizza.id}" data-price="${pizza.precio}">
+                        Añadir al carrito <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+                </div>`;
 
 gallery.appendChild(li);
 }); // End of forEach
