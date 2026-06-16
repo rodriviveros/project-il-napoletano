@@ -15,7 +15,8 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-family: "Oswald", sans-serif;
+ font-family: "Comfortaa", sans-serif;
+  font-optical-sizing: auto;
   padding: 10px 20px 10px 20px;
 }
 
@@ -72,7 +73,6 @@ main h2 {
   justify-content: center;
   flex-wrap: wrap;
   list-style: none;
-  font-family: "Fira Sans", sans-serif;
 }
 
 .gallery li {
@@ -97,12 +97,13 @@ main h2 {
 .gallery li .box h3 {
   margin-bottom: 6px;
   text-align: center;
-  font-size: 1.125rem;
+  font-size: 1.5rem;
   font-weight: bold;
   line-height: 100%;
   text-transform: uppercase;
   color: #17181a;
   letter-spacing: 2px;
+  font-family: "Paytone One", sans-serif;
 }
 
 
@@ -110,7 +111,8 @@ main h2 {
   text-align: center;
   font-size: 2rem;
   font-weight: bold;
-  color: #135D76
+  color: #135D76;
+  font-family: "Paytone One", sans-serif;
 }
 
 .gallery li .box time {
@@ -119,6 +121,8 @@ main h2 {
   font-size: 1rem;
   font-weight: bold;
   color: #1a5b5e;
+  font-family: "Comfortaa", sans-serif;
+  font-optical-sizing: auto;
 }
 
 
@@ -159,6 +163,8 @@ main h2 {
   text-decoration: none;
   font-size: 1rem;
   font-weight: bold;
+  font-family: "Comfortaa", sans-serif;
+  font-optical-sizing: auto;
 }
 
 .footer-nav ul li a:hover {
@@ -187,6 +193,8 @@ main h2 {
   font-size: 0.9rem;
   color: #666;
   padding-top: 20px;
+  font-family: "Comfortaa", sans-serif;
+  font-optical-sizing: auto;
 }
 
 footer {
