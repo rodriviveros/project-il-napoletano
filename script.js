@@ -1,3 +1,6 @@
+let preciosCarrito=[];
+
+
 function abrirModal(pizza) {
 
     Swal.fire({
@@ -18,6 +21,19 @@ function abrirModal(pizza) {
 
     });
 }
+
+
+function calcularPrecio (pizza) {
+preciosCarrito.push(pizza.precio);
+console.log(`Precios en el carrito: $${preciosCarrito}`);
+let total=0;
+preciosCarrito.forEach(precio => {
+total=total+precio;
+
+});
+console.log(total);
+}
+
 
     async function cargarProductos() {
         // Cargar el archivo JSON
@@ -45,6 +61,8 @@ function abrirModal(pizza) {
                 const img = li.querySelector('.img-clickeable');
                 img.addEventListener('click', () => abrirModal(pizza));
                 gallery.appendChild(li);
+                const btn = li.querySelector('.button');
+                btn.addEventListener('click', () => calcularPrecio(pizza));
             }); // End of forEach
 
         } // End of try
