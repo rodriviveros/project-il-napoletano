@@ -141,7 +141,7 @@ main h2 {
   justify-content: center;
 }
 
-.gallery li .box .buttom {
+.gallery li .box .button {
   margin-top: 5px;
   width: 100%;
   padding: 7px;
@@ -200,6 +200,17 @@ main h2 {
 footer {
   background-color: #F5ECD7;
   font-size: 4rem;
+}
+
+/* Cursor pointer en la imagen para indicar que es clickeable */
+.img-clickeable {
+  cursor: pointer;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+ 
+.img-clickeable:hover {
+  transform: scale(1.03);
+  opacity: 0.9;
 }
 
 /* Adaptar a una tablet */
